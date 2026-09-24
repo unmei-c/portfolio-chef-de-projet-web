@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6F0" />
+      <stop offset="100%" stop-color="#EFE6DD" />
+    </linearGradient>
+    <filter id="p1Shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#3A2A20" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Canvas background -->
+  <rect width="600" height="400" rx="16" fill="url(#p1Grad)" />
+
+  <!-- Browser Window Mockup -->
+  <g transform="translate(45, 35)" filter="url(#p1Shadow)">
+    <!-- Window Frame -->
+    <rect width="510" height="315" rx="12" fill="#FFFFFF" stroke="#E2D8CD" stroke-width="1.5" />
+    
+    <!-- Window Header -->
+    <path d="M0 12 Q0 0 12 0 L498 0 Q510 0 510 12 L510 38 L0 38 Z" fill="#F7F3EE" />
+    <circle cx="20" cy="19" r="5" fill="#E76F51" />
+    <circle cx="36" cy="19" r="5" fill="#E9C46A" />
+    <circle cx="52" cy="19" r="5" fill="#2A9D8F" />
+    
+    <!-- Address Bar -->
+    <rect x="75" y="9" width="310" height="20" rx="6" fill="#FFFFFF" stroke="#E4DCD3" stroke-width="1" />
+    <text x="90" y="23" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" fill="#7D746B">https://client-agency.com/refonte-web</text>
+    
+    <!-- Badge Status -->
+    <rect x="395" y="9" width="100" height="20" rx="6" fill="#F0E3DE" />
+    <text x="445" y="23" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="600" fill="#B85D43" text-anchor="middle">WordPress CMS</text>
+
+    <!-- Page Content Mockup -->
+    <!-- Hero Banner inside Mockup -->
+    <rect x="25" y="55" width="460" height="95" rx="8" fill="#FDFBF7" stroke="#ECE4DA" stroke-width="1" />
+    <rect x="45" y="73" width="160" height="12" rx="4" fill="#B85D43" opacity="0.9" />
+    <rect x="45" y="93" width="220" height="8" rx="3" fill="#A89E94" opacity="0.6" />
+    <rect x="45" y="106" width="180" height="8" rx="3" fill="#A89E94" opacity="0.4" />
+    <rect x="45" y="122" width="80" height="16" rx="6" fill="#242325" />
+    
+    <!-- Visual Image Placeholder inside Browser -->
+    <rect x="290" y="67" width="175" height="72" rx="6" fill="#F1E7DD" />
+    <circle cx="377" cy="95" r="16" fill="#B85D43" opacity="0.25" />
+    <path d="M305 130 L345 105 L375 125 L415 95 L450 130 Z" fill="#D8C8BA" />
+
+    <!-- 3 Cards Section -->
+    <g transform="translate(25, 165)">
+      <!-- Card 1: SEO -->
+      <rect x="0" y="0" width="144" height="85" rx="8" fill="#FFFFFF" stroke="#EAE2D8" stroke-width="1.2" />
+      <circle cx="25" cy="25" r="12" fill="#EAF6F0" />
+      <text x="25" y="29" font-family="system-ui" font-size="12" font-weight="700" fill="#2E7D32" text-anchor="middle">↗</text>
+      <text x="48" y="24" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="700" fill="#242325">+45%</text>
+      <text x="48" y="36" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" fill="#887F76">Trafic SEO</text>
+      <rect x="15" y="52" width="114" height="6" rx="3" fill="#F0ECE5" />
+      <rect x="15" y="63" width="85" height="6" rx="3" fill="#F0ECE5" />
+
+      <!-- Card 2: Performance -->
+      <rect x="158" y="0" width="144" height="85" rx="8" fill="#FFFFFF" stroke="#EAE2D8" stroke-width="1.2" />
+      <circle cx="183" cy="25" r="12" fill="#FBF3E8" />
+      <text x="183" y="29" font-family="system-ui" font-size="11" font-weight="700" fill="#D97706" text-anchor="middle">⚡</text>
+      <text x="206" y="24" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="700" fill="#242325">95/100</text>
+      <text x="206" y="36" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" fill="#887F76">Lighthouse Score</text>
+      <rect x="173" y="52" width="114" height="6" rx="3" fill="#F0ECE5" />
+      <rect x="173" y="63" width="75" height="6" rx="3" fill="#F0ECE5" />
+
+      <!-- Card 3: Sprint Agile -->
+      <rect x="316" y="0" width="144" height="85" rx="8" fill="#FFFFFF" stroke="#EAE2D8" stroke-width="1.2" />
+      <circle cx="341" cy="25" r="12" fill="#F4ECF7" />
+      <text x="341" y="29" font-family="system-ui" font-size="11" font-weight="700" fill="#7C3AED" text-anchor="middle">✓</text>
+      <text x="364" y="24" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="700" fill="#242325">100%</text>
+      <text x="364" y="36" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" fill="#887F76">Délais respectés</text>
+      <rect x="331" y="52" width="114" height="6" rx="3" fill="#F0ECE5" />
+      <rect x="331" y="63" width="90" height="6" rx="3" fill="#F0ECE5" />
+    </g>
+
+    <!-- Bottom Pill -->
+    <g transform="translate(130, 270)">
+      <rect width="250" height="26" rx="13" fill="#242325" />
+      <text x="125" y="17" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Refonte WordPress • Cadrage &amp; SEO</text>
+    </g>
+  </g>
+</svg>

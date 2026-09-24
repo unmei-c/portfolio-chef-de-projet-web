@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F5F0" />
+      <stop offset="100%" stop-color="#ECE3D7" />
+    </linearGradient>
+    <filter id="p2Shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#3A2A20" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" rx="16" fill="url(#p2Grad)" />
+
+  <g transform="translate(45, 35)" filter="url(#p2Shadow)">
+    <!-- Main Board -->
+    <rect width="510" height="315" rx="12" fill="#FFFFFF" stroke="#E2D8CD" stroke-width="1.5" />
+
+    <!-- Top Bar -->
+    <path d="M0 12 Q0 0 12 0 L498 0 Q510 0 510 12 L510 38 L0 38 Z" fill="#F7F3EE" />
+    <circle cx="20" cy="19" r="5" fill="#E76F51" />
+    <circle cx="36" cy="19" r="5" fill="#E9C46A" />
+    <circle cx="52" cy="19" r="5" fill="#2A9D8F" />
+    <text x="80" y="24" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#242325">Salesforce Marketing Cloud ⸱ Journey Builder &amp; Emailing</text>
+    <rect x="400" y="9" width="95" height="20" rx="6" fill="#EBF4FE" />
+    <text x="447" y="23" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="600" fill="#0284C7" text-anchor="middle">Campagne Active</text>
+
+    <!-- Left side: Mobile email preview -->
+    <g transform="translate(30, 52)">
+      <!-- Phone silhouette -->
+      <rect width="160" height="240" rx="16" fill="#FDFBF7" stroke="#DDD3C7" stroke-width="2" />
+      <!-- Notch / speaker -->
+      <rect x="55" y="8" width="50" height="4" rx="2" fill="#C2B7AA" />
+      
+      <!-- Email Header inside phone -->
+      <rect x="15" y="22" width="130" height="30" rx="6" fill="#B85D43" />
+      <text x="80" y="41" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">NEWSLETTER</text>
+      
+      <!-- Email Content -->
+      <rect x="15" y="60" width="130" height="55" rx="6" fill="#EFE8DE" />
+      <circle cx="80" cy="85" r="14" fill="#B85D43" opacity="0.3" />
+      
+      <rect x="15" y="125" width="130" height="8" rx="2" fill="#4B4844" opacity="0.8" />
+      <rect x="15" y="138" width="110" height="6" rx="2" fill="#887F76" opacity="0.5" />
+      <rect x="15" y="148" width="95" height="6" rx="2" fill="#887F76" opacity="0.5" />
+      
+      <!-- CTA Button in phone -->
+      <rect x="35" y="166" width="90" height="22" rx="11" fill="#B85D43" />
+      <text x="80" y="181" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="600" fill="#FFFFFF" text-anchor="middle">Découvrir l'offre</text>
+      
+      <rect x="25" y="200" width="110" height="5" rx="2" fill="#D3C9BD" />
+      <rect x="40" y="210" width="80" height="5" rx="2" fill="#D3C9BD" />
+    </g>
+
+    <!-- Right side: Automation Workflow & Metrics -->
+    <g transform="translate(215, 55)">
+      <!-- Automation Nodes -->
+      <text x="0" y="15" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#242325">Scénario de Marketing Automation</text>
+      
+      <!-- Step 1: Inscription -->
+      <g transform="translate(0, 30)">
+        <rect width="120" height="36" rx="6" fill="#F5EFEB" stroke="#D8C9BC" stroke-width="1.2" />
+        <circle cx="16" cy="18" r="6" fill="#2E7D32" />
+        <text x="30" y="17" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="700" fill="#242325">Trigger : Inscription</text>
+        <text x="30" y="28" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" fill="#7D746B">Formulaire web</text>
+      </g>
+
+      <!-- Arrow -->
+      <line x1="120" y1="48" x2="148" y2="48" stroke="#B85D43" stroke-width="2" stroke-dasharray="3 3" />
+      <polygon points="148,45 155,48 148,51" fill="#B85D43" />
+
+      <!-- Step 2: Email Welcome -->
+      <g transform="translate(155, 30)">
+        <rect width="115" height="36" rx="6" fill="#F0E3DE" stroke="#C26D53" stroke-width="1.2" />
+        <text x="12" y="17" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="700" fill="#A54D35">Email Bienvenue</text>
+        <text x="12" y="28" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" fill="#A54D35">Template responsive</text>
+      </g>
+
+      <!-- KPI cards -->
+      <g transform="translate(0, 85)">
+        <!-- KPI 1 -->
+        <rect x="0" y="0" width="130" height="65" rx="8" fill="#FFFFFF" stroke="#EAE2D8" stroke-width="1.2" />
+        <text x="14" y="22" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="600" fill="#7D746B">Taux d'ouverture</text>
+        <text x="14" y="45" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="18" font-weight="800" fill="#B85D43">34.2%</text>
+        <text x="68" y="43" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="600" fill="#2E7D32">+8.5 pts</text>
+
+        <!-- KPI 2 -->
+        <rect x="140" y="0" width="130" height="65" rx="8" fill="#FFFFFF" stroke="#EAE2D8" stroke-width="1.2" />
+        <text x="154" y="22" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="600" fill="#7D746B">Délivrabilité</text>
+        <text x="154" y="45" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="18" font-weight="800" fill="#242325">99.2%</text>
+        <text x="210" y="43" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="600" fill="#2E7D32">Optimal</text>
+
+        <!-- KPI 3 -->
+        <rect x="0" y="75" width="270" height="55" rx="8" fill="#FBF9F5" stroke="#EAE2D8" stroke-width="1.2" />
+        <text x="14" y="96" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="600" fill="#7D746B">Campagnes routées</text>
+        <text x="14" y="118" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="800" fill="#242325">+250k emails</text>
+        <text x="150" y="117" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="600" fill="#B85D43">A/B Testing &amp; Segmentation</text>
+      </g>
+    </g>
+  </g>
+</svg>

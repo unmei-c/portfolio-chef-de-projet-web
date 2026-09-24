@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5EFEB" />
+      <stop offset="100%" stop-color="#EADBCE" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C26D53" />
+      <stop offset="100%" stop-color="#A54D35" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#5A3A2C" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" rx="32" fill="url(#bgGrad)" />
+
+  <!-- Decorative circles -->
+  <circle cx="80" cy="80" r="120" fill="#FFFFFF" opacity="0.4" />
+  <circle cx="340" cy="320" r="90" fill="#B85D43" opacity="0.08" />
+
+  <!-- Avatar Silhouette -->
+  <g transform="translate(100, 70)" filter="url(#subtleShadow)">
+    <!-- Base card -->
+    <rect width="200" height="230" rx="24" fill="#FFFFFF" />
+    
+    <!-- Stylized head -->
+    <circle cx="100" cy="75" r="42" fill="url(#accentGrad)" />
+    
+    <!-- Stylized shoulders -->
+    <path d="M40 185 C40 135, 70 130, 100 130 C130 130, 160 135, 160 185 Z" fill="#242325" />
+    
+    <!-- Monogram badge -->
+    <circle cx="100" cy="75" r="30" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="4 3" />
+    <text x="100" y="83" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">AC</text>
+  </g>
+
+  <!-- Info pill -->
+  <g transform="translate(60, 320)">
+    <rect width="280" height="42" rx="21" fill="#FFFFFF" stroke="#E2D6CC" stroke-width="1.5" />
+    <circle cx="24" cy="21" r="5" fill="#2ECC71" />
+    <text x="40" y="26" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="600" fill="#242325">Photo : Emplacement réservé</text>
+    <text x="210" y="26" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="500" fill="#8C7A70">aurelie-chea.jpg</text>
+  </g>
+</svg>
