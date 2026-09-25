@@ -14,14 +14,13 @@ Site portfolio one-page moderne, épuré, accessible (WCAG AA/AAA) et sans dépe
 ---
 
 ## 🧭 Les 5 Sections du Site
-1. **Hero (`#hero`)** : Accroche valorisant la double compétence technique (DUT Info) et stratégique (Master Web), badges de spécialités, CTA vers les projets et le CV, carte portrait avec métriques d'impact.
-2. **À propos (`#a-propos`)** : Parcours détaillé, 4 piliers méthodologiques (Cadrage, Agile, Coordination, SEO) et soft skills issus de vos passions (natation inter-régionale, taekwondo, arts, langues).
-3. **Mon CV (`#cv`)** :
+1. **Hero (`#hero`)** : Accroche synthétique, badges de spécialités, CTA vers les réalisations, le contact et le CV, cadre photo épuré avec pastilles d'impact (*"10+ projets pilotés en agence"*, *"3 Ans D'expérience"*).
+2. **Mon CV (`#cv`)** :
    - Expériences professionnelles (Marketing Tactics 2022-2025, Axalone France 2021-2022) avec missions détaillées.
    - Formations académiques (Master Cultures & Métiers du Web, Licence Pro Multimédia, DUT Informatique).
    - Boîte à outils catégorisée (Gestion & Agile, CMS WordPress/Drupal/Joomla, UI/UX Figma, SEO, Code HTML/CSS/PHP/JS/SQL).
-   - Bouton de téléchargement direct du CV au format PDF.
-4. **Mes projets (`#projets`)** : 4 études de cas représentatives avec filtres de catégories, maquettes vectorielles élégantes et modale détaillée interactive (Problématique > Rôle PM/PO > Actions > Résultats & KPIs).
+3. **Mes projets (`#projets`)** : 4 études de cas représentatives avec filtres de catégories, maquettes vectorielles élégantes et modale détaillée interactive (Problématique > Rôle PM/PO > Actions > Résultats & KPIs).
+4. **À propos (`#a-propos`)** : Parcours détaillé, 4 piliers méthodologiques (Cadrage, Agile, Coordination, SEO) et soft skills issus de vos passions (natation inter-régionale, taekwondo, arts, langues).
 5. **Me contacter (`#contact`)** : Coordonnées directes (email cliquable avec bouton copier, localisation Noisy-le-Grand / Île-de-France, lien LinkedIn direct), et formulaire accessible avec validation.
 
 ---
@@ -41,10 +40,10 @@ Vous pouvez ouvrir directement le site dans n'importe quel navigateur :
 
 ### 1. Ajouter votre vraie photo de profil
 - Déposez votre photo dans le dossier `assets/images/` sous le nom `aurelie-chea.jpg` (ou `.png`).
-- Dans `index.html` (vers la ligne 185), modifiez simplement l'attribut `src` :
-  ```html
-  <img src="assets/images/aurelie-chea.jpg" alt="Portrait d'Aurélie Chea" class="hero-avatar-img" width="380" height="380">
-  ```
+- Dans `index.html`, modifiez simplement l'attribut `src` :
+   ```html
+   <img src="assets/images/aurelie-chea.jpg" alt="Portrait d'Aurélie Chea" class="hero-avatar-img" width="380" height="380">
+   ```
 
 ### 2. Mettre à jour votre fichier CV PDF
 - Déposez votre PDF final dans `assets/docs/` sous le nom `CV_Aurelie_Chea.pdf` (il remplacera le placeholder actuel). Tous les boutons de téléchargement du site pointent déjà directement vers ce fichier !
@@ -60,4 +59,3 @@ Vous pouvez ouvrir directement le site dans n'importe quel navigateur :
 Ce site étant 100% statique (HTML/CSS/JS pur), il peut être mis en ligne gratuitement en quelques secondes :
 - **GitHub Pages** : Poussez ce dossier sur un dépôt GitHub et activez GitHub Pages dans les réglages.
 - **Netlify / Vercel** : Glissez-déposez simplement ce dossier sur [Netlify Drop](https://app.netlify.com/drop).
-- **Nom de domaine personnalisé** (ex. `aureliechea.fr`) : peut être relié en quelques clics via votre hébergeur.
