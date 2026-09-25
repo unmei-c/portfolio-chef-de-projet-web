@@ -267,6 +267,7 @@ ul, ol {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  min-width: 0;
 }
 
 .logo-badge {
@@ -282,6 +283,7 @@ ul, ol {
   font-size: 1.125rem;
   letter-spacing: -0.02em;
   transition: transform var(--transition-fast);
+  flex-shrink: 0;
 }
 
 .logo:hover .logo-badge {
@@ -291,6 +293,7 @@ ul, ol {
 .logo-text {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .logo-name {
@@ -298,12 +301,14 @@ ul, ol {
   font-size: 1rem;
   color: var(--color-text-main);
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 .logo-role {
   font-size: var(--text-xs);
   color: var(--color-text-secondary);
   font-weight: 500;
+  white-space: nowrap;
 }
 
 /* Menu de navigation bureau */
@@ -355,15 +360,18 @@ ul, ol {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex-shrink: 0;
 }
 
+.header-actions .header-cv-btn,
 .header-cv-btn {
-  display: none;
+  display: none !important;
 }
 
 @media (min-width: 860px) {
+  .header-actions .header-cv-btn,
   .header-cv-btn {
-    display: inline-flex;
+    display: inline-flex !important;
   }
 }
 
@@ -380,6 +388,7 @@ ul, ol {
   background-color: var(--color-surface);
   gap: 5px;
   transition: background-color var(--transition-fast);
+  flex-shrink: 0;
 }
 
 .menu-toggle:hover {
